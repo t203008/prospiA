@@ -1,2 +1,1 @@
-# playground
- For testing out GitHub Desktop.
+2021年のプロ野球スピリッツAのアニバーサリーの組み合わせを予想します。
