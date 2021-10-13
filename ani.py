@@ -2,8 +2,7 @@ import streamlit as st
 st.title("アニバーサリー総選挙2021 予想")
 st.button('再予想')
 seigen=st.checkbox('制限を解除する')
-thirty=st.checkbox("30連でシミュレーション")
-sixty=st.checkbox("60連でシミュレーション")
+simulation=st.radio("シミュレーションしますか？",("しない","30連でシミュレーション","60連でシミュレーション"))
 
 import numpy as np
 
@@ -186,7 +185,7 @@ st.write(one)
 st.header("第二弾")
 st.write(two)
 
-if thirty==True:
+if simulation=="30連でシミュレーション":
     o=one[np.random.randint(0,11)]
     t=two[np.random.randint(0,11)]
     s=0
@@ -204,7 +203,7 @@ if thirty==True:
     st.subheader(t)
     st.write("それ以外に出たSランクは")
     st.subheader(s,"人です")
-elif sixty==True:
+elif simulation=="60連でシミュレーション":
     o=one[np.random.randint(0,11)]
     t=two[np.random.randint(0,11)]
     s=0
