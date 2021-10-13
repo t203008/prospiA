@@ -1,6 +1,7 @@
 import streamlit as st
 st.title("アニバーサリー総選挙2021 予想")
 st.button('再予想')
+st.checkbox('愛萌推し', value=False)
 import numpy as np
 random=["柳田","千賀","藤原","マーティン","森","外崎","則本","松井","上沢","伊藤","吉田","山本","岡本","菅野","佐藤","藤浪","ビシエド","大野","オースティン","ソト","鈴木","栗林","村上","奥川"]
 one=[]
@@ -94,8 +95,6 @@ st.write(one)
 st.header("第二弾")
 st.write(two)
 
-# チェックボックス
-#st.checkbox('ラベル', value=False) # valueは初期状態
 
 # ラジオボタン
 #st.radio("ラベル",('選択肢1', '選択肢2', '選択肢3'))
