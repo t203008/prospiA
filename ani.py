@@ -94,6 +94,31 @@ st.write(one)
 st.header("第二弾")
 st.write(two)
 
-st.subheader("あなたはどのくらいエナジーを使う？")
-st.write(input())
+# ボタン
+st.button('ラベル')
 
+# チェックボックス
+st.checkbox('ラベル', value=False) # valueは初期状態
+
+# ラジオボタン
+st.radio("ラベル",('選択肢1', '選択肢2', '選択肢3'))
+
+# 選択肢
+st.selectbox('ラベル',('選択肢1', '選択肢2', '選択肢3'))
+
+# 複数選択
+st.multiselect('ラベル', ['選択肢1', '選択肢2', '選択肢3'],初期選択値のリスト)
+st.multiselect('ラベル', ['選択肢1', '選択肢2', '選択肢3'],['選択肢2']) #例
+
+# スライダー
+st.slider('ラベル', 最小値, 最大値, 初期値, 刻み値, フォーマット %d,%fなど)
+
+# テキスト入力
+st.text_input('ラベル', '初期表示文字列')
+
+# 数値入力
+st.number_input('ラベル', 最小値, 最大値, 初期値)
+
+# ファイルアップロード
+st.file_uploader("ラベル", type=ファイルタイプ,encoding) 
+# 上限ファイルサイズ200MB, ファイルタイプはcsvやpngなどをstrかlistで与える
