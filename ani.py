@@ -1,9 +1,10 @@
 import streamlit as st
 st.title("アニバーサリー総選挙2021 予想")
-st.button('再予想')
 seigen=st.checkbox('制限を解除する')
 simulation=st.radio("シミュレーションしますか？",("しない","30連でシミュレーション","60連でシミュレーション"))
 toba=st.text_input('', 'いい選手が当たるといいね！')
+
+st.button('再予想')
 
 import numpy as np
 
