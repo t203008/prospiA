@@ -206,7 +206,7 @@ if n==1:
     st.subheader(t)
     st.write("それ以外に出たSランクは")
     st.subheader(s,"人です")
- elif n==2:
+elif n==2:
     o=one[np.random.randint(0,11)]
     t=two[np.random.randint(0,11)]
     s=0
