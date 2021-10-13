@@ -93,3 +93,7 @@ st.header("第一弾")
 st.write(one)
 st.header("第二弾")
 st.write(two)
+
+st.subheader("あなたはどのくらいエナジーを使う？")
+input()
+
