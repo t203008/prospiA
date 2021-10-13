@@ -199,13 +199,6 @@ if toba=="調子くん":
 if toba=="調子カス":
          st.write("ハズレが引けるといいね！！")
  
-         
-    
-st.header("第一弾")
-st.write(one)
-st.header("第二弾")
-st.write(two)
-
 if simulation=="30連でシミュレーション":
     o=one[np.random.randint(0,11)]
     t=two[np.random.randint(0,11)]
@@ -242,6 +235,13 @@ elif simulation=="60連でシミュレーション":
     st.subheader(t)
     st.write("確定分以外に出たSランクの人数は")
     st.subheader(s)
+
+         
+    
+st.header("第一弾")
+st.write(one)
+st.header("第二弾")
+st.write(two)
   
 if toba=="野崎康誠":
     st.write("文字、間違えてませんか？？")
