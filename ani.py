@@ -192,7 +192,7 @@ if simulation=="30連でシミュレーション":
     k=29
     while k>=0:
        y=np.random.randint(1,1001)
-       if y<=250:
+       if y<=25:
             s+=1
             k-=1
        else:
@@ -202,7 +202,7 @@ if simulation=="30連でシミュレーション":
     st.write("第二弾30連目に出た選手は")
     st.subheader(t)
     st.write("それ以外に出たSランクは")
-    st.subheader(s,"人です")
+    st.subheader(s+"人です")
 elif simulation=="60連でシミュレーション":
     o=one[np.random.randint(0,11)]
     t=two[np.random.randint(0,11)]
@@ -210,7 +210,7 @@ elif simulation=="60連でシミュレーション":
     k=58
     while k>=0:
        y=np.random.randint(1,1001)
-       if y<=250:
+       if y<=25:
             s+=1
             k-=1
        else:
@@ -220,7 +220,7 @@ elif simulation=="60連でシミュレーション":
     st.write("第二弾60連目に出た選手は")
     st.subheader(t)
     st.write("確定分以外に出たSランクは")
-    st.subheader(s,"人です")
+    st.subheader(s+"人です")
  
     
     
