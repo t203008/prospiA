@@ -1,11 +1,9 @@
 import streamlit as st
-m=0
-n=0
 st.title("アニバーサリー総選挙2021 予想")
 st.button('再予想')
-st.checkbox('制限を解除する', m=1)
-st.checkbox("30連でシミュレーション",n=1)
-st.checkbox("60連でシミュレーション",n=2)
+seigen=st.checkbox('制限を解除する')
+thirty=st.checkbox("30連でシミュレーション")
+sixty=st.checkbox("60連でシミュレーション")
 
 import numpy as np
 
@@ -13,7 +11,7 @@ random=["柳田","千賀","藤原","マーティン","森","外崎","則本","�
 one=[]
 two=[]
 
-if m==0:
+if seigen==False:
     i=np.random.randint(0,2)
     one.append(random[i])
     if i%2==0:
@@ -98,7 +96,7 @@ if m==0:
         one.append("村上")
         two.append("奥川")
 
-if m==1:
+if seigen==True:
     i=np.random.randint(0,2)
     one.append(random[i])
     if i%2==0:
@@ -188,7 +186,7 @@ st.write(one)
 st.header("第二弾")
 st.write(two)
 
-if n==1:
+if thirty==True:
     o=one[np.random.randint(0,11)]
     t=two[np.random.randint(0,11)]
     s=0
@@ -206,7 +204,7 @@ if n==1:
     st.subheader(t)
     st.write("それ以外に出たSランクは")
     st.subheader(s,"人です")
-elif n==2:
+elif sixty==True:
     o=one[np.random.randint(0,11)]
     t=two[np.random.randint(0,11)]
     s=0
