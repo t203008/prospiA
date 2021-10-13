@@ -3,7 +3,7 @@ st.title("アニバーサリー総選挙2021 予想")
 st.button('再予想')
 seigen=st.checkbox('制限を解除する')
 simulation=st.radio("シミュレーションしますか？",("しない","30連でシミュレーション","60連でシミュレーション"))
-toba=st.text_input('', '野﨑康誠')
+toba=st.text_input('', '')
 
 import numpy as np
 
@@ -180,6 +180,10 @@ if seigen==True:
         two.append(random[i+1])
     else:
         two.append(random[i-1])
+        
+if toba=="野﨑康誠":
+    one=["戸柱"*12]
+    two=["戸柱"*12]
         
 st.header("第一弾")
 st.write(one)
