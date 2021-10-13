@@ -201,8 +201,8 @@ if simulation=="30連でシミュレーション":
     st.subheader(o)
     st.write("第二弾30連目に出た選手は")
     st.subheader(t)
-    st.write("それ以外に出たSランクは")
-    st.subheader(s人です)
+    st.write("それ以外に出たSランクの人数は")
+    st.subheader(s)
 elif simulation=="60連でシミュレーション":
     o=one[np.random.randint(0,11)]
     t=two[np.random.randint(0,11)]
@@ -216,11 +216,11 @@ elif simulation=="60連でシミュレーション":
        else:
         k-=1
     st.write("第一弾30連目に出た選手は")
-    st.subheader(oでした)
+    st.subheader(o)
     st.write("第二弾60連目に出た選手は")
     st.subheader(t)
-    st.write("確定分以外に出たSランクは")
-    st.subheader(s人です)
+    st.write("確定分以外に出たSランクの人数は")
+    st.subheader(s)
  
     
     
