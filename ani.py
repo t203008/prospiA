@@ -193,10 +193,10 @@ if simulation=="30連でシミュレーション":
     while k>=0:
        y=np.random.randint(1,1001)
        if y<=250:
-            s=s+1
-            k=K-1
+            s+=1
+            k-=1
        else:
-        k=k-1
+        k-=1
     st.write("第一弾30連目に出た選手は")
     st.subheader(o)
     st.write("第二弾30連目に出た選手は")
@@ -211,10 +211,10 @@ elif simulation=="60連でシミュレーション":
     while k>=0:
        y=np.random.randint(1,1001)
        if y<=250:
-            s=s+1
-            k=K-1
+            s+=1
+            k-=1
        else:
-        k=k-1
+        k-=1
     st.write("第一弾30連目に出た選手は")
     st.subheader(o)
     st.write("第二弾60連目に出た選手は")
