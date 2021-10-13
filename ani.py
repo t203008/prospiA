@@ -182,8 +182,8 @@ if seigen==True:
         two.append(random[i-1])
         
 if toba=="野﨑康誠":
-    one=["戸柱"*12]
-    two=["戸柱"*12]
+    one=["戸柱",*12]
+    two=["戸柱",*12]
         
 st.header("第一弾")
 st.write(one)
