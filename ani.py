@@ -3,15 +3,11 @@ st.title("アニバーサリー総選挙2021 予想")
 seigen=st.checkbox('制限を解除する')
 simulation=st.radio("シミュレーションしますか？",("しない","30連でシミュレーション","60連でシミュレーション"))
 toba=st.text_input('', 'もう一度予想するときは下のボタンからどうぞ！')
-
 st.button('再予想')
-
 import numpy as np
-
 random=["柳田","千賀","藤原","マーティン","森","外崎","則本","松井","上沢","伊藤","吉田","山本","岡本","菅野","佐藤","藤浪","ビシエド","大野","オースティン","ソト","鈴木","栗林","村上","奥川"]
 one=[]
 two=[]
-
 if seigen==False:
     i=np.random.randint(0,2)
     one.append(random[i])
@@ -19,56 +15,48 @@ if seigen==False:
         two.append(random[i+1])
     else:
         two.append(random[i-1])
-
     i=np.random.randint(2,4)
     one.append(random[i])
     if i%2==0:
         two.append(random[i+1])
     else:
         two.append(random[i-1])
-
     i=np.random.randint(4,6)
     one.append(random[i])
     if i%2==0:
         two.append(random[i+1])
     else:
         two.append(random[i-1])
-
     i=np.random.randint(6,8)
     one.append(random[i])
     if i%2==0:
         two.append(random[i+1])
     else:
         two.append(random[i-1])
-
     i=np.random.randint(8,10)
     one.append(random[i])
     if i%2==0:
         two.append(random[i+1])
     else:
         two.append(random[i-1])
-
     if one[0]=="柳田":
         one.append("山本")
         two.append("吉田")
     else:
         one.append("吉田")
         two.append("山本")
-
     i=np.random.randint(12,14)
     one.append(random[i])
     if i%2==0:
         two.append(random[i+1])
     else:
         two.append(random[i-1])
-
     if one[6]=="岡本":
         one.append("佐藤")
         two.append("藤浪")
     else:
-        one.append("藤浪")
+        one.append("藤波")
         two.append("佐藤")
-
     if one[1]=="マーティン":
         one.append("大野")
         two.append("ビシエド")
@@ -96,7 +84,6 @@ if seigen==False:
     else:
         one.append("村上")
         two.append("奥川")
-
 if seigen==True:
     i=np.random.randint(0,2)
     one.append(random[i])
@@ -182,9 +169,22 @@ if seigen==True:
     else:
         two.append(random[i-1])
         
+if toba=="野﨑康誠":
+    one=["戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱"]
+    two=["戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱","戸柱"]
+if toba=="佐藤廉":
+    one=["源田","源田","源田","源田","源田","源田","衛藤","源田","源田","源田","源田","源田"]
+    two=["源田","源田","源田","源田","源田","源田","衛藤","源田","源田","源田","源田","源田"]
+if toba=="大槻亮介":
+    one=["三浦","遠藤","斎藤隆","山﨑康晃","ローズ","ブランコ","村田","石井琢朗","筒香","鈴木尚典","高木豊","谷繫"]
+    two=["愛萌","愛萌","愛萌","愛萌","愛萌","愛萌","斉藤優里","斉藤優里","斉藤優里","斉藤優里","斉藤優里","斉藤優里"]
+
 if toba=="調子くん":
          st.write("アタリが引けるといいね！！")
- 
+
+if toba=="調子カス":
+         st.write("ハズレが引けるといいね！！")
+
 if simulation=="30連でシミュレーション":
     o=one[np.random.randint(0,11)]
     t=two[np.random.randint(0,11)]
@@ -217,14 +217,23 @@ elif simulation=="60連でシミュレーション":
         k-=1
     st.write("第一弾30連目に出た選手は")
     st.subheader(o)
+    st.write("第二弾60連目に出た選手は")
     st.write("第二弾30連目に出た選手は")
     st.subheader(t)
     st.write("確定分以外に出たSランクの人数は")
     st.subheader(s)
-
          
     
 st.header("第一弾")
 st.write(one)
 st.header("第二弾")
 st.write(two)
+
+if toba=="野崎康誠":
+    st.write("文字、間違えてませんか？？")
+
+if toba=="調子くん":
+         st.write("アタリが引けるといいね！！")
+
+if toba=="調子カス":
+         st.write("ハズレが引けるといいね！！")
