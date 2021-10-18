@@ -66,7 +66,7 @@ if seigen==False:
         one.append("佐藤")
         two.append("藤浪")
     else:
-        one.append("藤波")
+        one.append("藤浪")
         two.append("佐藤")
 
     if one[1]=="マーティン":
@@ -228,4 +228,3 @@ st.header("第一弾")
 st.write(one)
 st.header("第二弾")
 st.write(two)
-    
