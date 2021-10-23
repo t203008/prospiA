@@ -73,7 +73,7 @@ if st.button('予想'):
                                 else:
                                     if se<=21:
                                         s+=1
-                                        st.write("S "+series+" "+se+"番目に登場した選手")
+                                        st.write("S "+series)
                                         k-=1
                         elif 25<y<=110:
                                 z=np.random.randint(1,11)
@@ -83,7 +83,7 @@ if st.button('予想'):
                                         k-=1
                                 else:
                                         a+=1
-                                        st.write("A "+series+" "+se+"番目に登場した選手")
+                                        st.write("A "+series)
                                         k-=1
                         else:
                                 b+=1
