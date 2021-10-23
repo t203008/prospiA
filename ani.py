@@ -129,9 +129,9 @@ if st.button('予想'):
                                 else:
                                         s+=1
                                         if play==0:
-                                            st.write("S　"+series+" "+s1_players[np.random.randint(0,252)])
+                                            st.write("S　"+series+"　"+s1_players[np.random.randint(0,252)])
                                         else:
-                                            st.write("S　"+series+" "+s2_players[np.random.randint(0,109)])
+                                            st.write("S　"+series+"　"+s2_players[np.random.randint(0,109)])
                                         k-=1
                         elif 25<y<=110:
                                 z=np.random.randint(1,11)
@@ -142,9 +142,9 @@ if st.button('予想'):
                                 else:
                                         a+=1
                                         if play==0:
-                                            st.write("A　"+series+" "+a1_players[np.random.randint(0,238)])
+                                            st.write("A　"+series+"　"+a1_players[np.random.randint(0,238)])
                                         else:
-                                            st.write("A　"+series+" "+a2_players[np.random.randint(0,109)])
+                                            st.write("A　"+series+"　"+a2_players[np.random.randint(0,109)])
                                         k-=1
                         else:
                                 b+=1
