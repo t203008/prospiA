@@ -128,7 +128,7 @@ if st.button('予想'):
                                         k-=1
                                 else:
                                         s+=1
-                                        if play==o:
+                                        if play==0:
                                             st.write("S "+series+" "+s1_players[np.random.randint(0,252)])
                                         else:
                                             st.write("S "+series+" "+s2_players[np.random.randint(0,109)])
