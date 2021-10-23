@@ -67,7 +67,7 @@ if st.button('予想'):
                             series="Series2"
                             se=str(se-21)
                         if bse<=23:
-                            bseries="Series1
+                            bseries="Series1"
                             bse=str(bse)
                         elif 23<bse:
                             bseries="Series2"
