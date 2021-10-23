@@ -24,7 +24,9 @@ elif team=="オリックス・バファローズ":
 elif team=="読売ジャイアンツ":
         te=6
 elif team=="阪神タイガース":
-    
+        te=7
+elif team=="中日ドラゴンズ":
+        te=8
 elif team=="横浜DeNAベイスターズ":
         te=9
 elif team=="広島東洋カープ":
