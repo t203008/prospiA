@@ -6,8 +6,8 @@ def main(i):
     for i in range(count_down_sec):
         time.sleep(1)
 st.title("アニバーサリー総選挙2021 予想")
-simulation=st.radio("何をシミュレーションしますか？",("60連目をシミュレーション","累計報酬をシミュレーション"))
-toba=st.text_input('名前を入力してください', '調子くん')
+simulation=st.sidebar.radio("何をシミュレーションしますか？",("60連目をシミュレーション","累計報酬をシミュレーション"))
+toba=st.sidebar.text_input('名前を入力してください', '調子くん')
 team=st.sidebar.radio("自チーム",("福岡ソフトバンクホークス","千葉ロッテマリーンズ","埼玉西武ライオンズ","東北楽天ゴールデンイーグルス","北海道日本ハムファイターズ","オリックス・バファローズ","読売ジャイアンツ","阪神タイガース","中日ドラゴンズ","横浜DeNAベイスターズ","広島東洋カープ","東京ヤクルトスワローズ"))
 if team=="福岡ソフトバンクホークス":
         te=0
@@ -62,11 +62,11 @@ if st.button('予想'):
                                 z=np.random.randint(1,11)
                                 if z<=5:
                                         s+=1
-                                        st.write("S "+one[np.random.randint(0,12)])
+                                        st.write("S "+one[np.random.randint(0,12)]+" アニバ")
                                         k-=1
                                 else:
                                         s+=1
-                                        st.write("S")
+                                        st.write("S "+)
                                         k-=1
                         elif 25<y<=110:
                                 z=np.random.randint(1,11)
