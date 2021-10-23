@@ -1,13 +1,11 @@
 import time
 import streamlit as st
-def main():
+def main(i):
     status_area = st.empty()
-    count_down_sec = 5
+    count_down_sec = i
     for i in range(count_down_sec):
         status_area.write(f'{count_down_sec - i} sec left')
         time.sleep(1)
-    st.balloons()
-main()
 st.title("アニバーサリー総選挙2021 予想")
 simulation=st.radio("何をシミュレーションしますか？",("60連目をシミュレーション","累計報酬をシミュレーション"))
 toba=st.text_input('名前を入力してください', '調子くん')
