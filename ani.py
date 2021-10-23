@@ -59,12 +59,19 @@ if st.button('予想'):
                         main(1)
                         y=np.random.randint(1,1001)
                         se=np.random.randint(1,31)
+                        bse=np.random.randint(1,33)
                         if se<=21:
                             series="Series1"
                             se=str(se)
-                        elif 21<=se:
+                        elif 21<se:
                             series="Series2"
                             se=str(se-21)
+                        if bse<=23:
+                            bseries="Series1
+                            bse=str(bse)
+                        elif 23<bse:
+                            bseries="Series2"
+                            bse=str(bse-23)
                         if y<=25:
                                 z=np.random.randint(1,11)
                                 if z<=5:
@@ -74,7 +81,7 @@ if st.button('予想'):
                                 else:
                                     if se<=21:
                                         s+=1
-                                        st.write("S "+se)
+                                        st.write("S "+series+" "+se+"番目に登場した選手")
                                         k-=1
                         elif 25<y<=110:
                                 z=np.random.randint(1,11)
@@ -84,15 +91,15 @@ if st.button('予想'):
                                         k-=1
                                 else:
                                         a+=1
-                                        st.write("A "+se)
+                                        st.write("A "+series+" "+se+"番目に登場した選手")
                                         k-=1
                         else:
                                 b+=1
-                                st.write("B")
+                                st.write("B"+bseries+" "+bse+"番目に登場した選手")
                                 k-=1
                 if k==1:
                         main(1)
-                        st.write("S "+one[int(te)])
+                        st.write("S "+one[int(te)]+" アニバ")
         main(1)
     
         if simulation=="累計報酬をシミュレーション":
