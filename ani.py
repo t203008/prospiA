@@ -61,9 +61,10 @@ if st.button('予想'):
                         se=np.random.randint(1,31)
                         if se<=21:
                             series="Series1"
+                            se=str(se)
                         elif 21<=se:
                             series="Series2"
-                            se=se-21
+                            se=str(se-21)
                         if y<=25:
                                 z=np.random.randint(1,11)
                                 if z<=5:
