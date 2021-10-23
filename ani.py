@@ -50,7 +50,7 @@ if st.button('予想'):
                                 b+=1
                                 st.write("B")
                                 k-=1
-                  if k==1:
+                if k==1:
                         st.write(one[])
     
         if simulation=="累計報酬をシミュレーション":
