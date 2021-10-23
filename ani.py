@@ -95,7 +95,7 @@ if st.button('予想'):
                                         k-=1
                         else:
                                 b+=1
-                                st.write("B"+bseries+" "+bse+"番目に登場した選手")
+                                st.write("B "+bseries+" "+bse+"番目に登場した選手")
                                 k-=1
                 if k==1:
                         main(1)
