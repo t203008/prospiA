@@ -64,8 +64,8 @@ if st.button('予想'):
                             select=se+"番目に登場した選手"
                         elif 21<=se:
                             series="Series2"
-                            ser
-                            select=ser-21+"番目に登場した選手"
+                            ser=se-21
+                            select=ser+"番目に登場した選手"
                         if y<=25:
                                 z=np.random.randint(1,11)
                                 if z<=5:
