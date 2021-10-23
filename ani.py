@@ -62,7 +62,7 @@ if st.button('予想'):
                                 z=np.random.randint(1,11)
                                 if z<=5:
                                         s+=1
-                                        st.write("S"+one[np.random.randint(0,12)])
+                                        st.write("S "+one[np.random.randint(0,12)])
                                         k-=1
                                 else:
                                         s+=1
@@ -72,7 +72,7 @@ if st.button('予想'):
                                 z=np.random.randint(1,11)
                                 if z<=3:
                                         a+=1
-                                        st.write("A"+one[np.random.randint(0,12)])
+                                        st.write("A "+one[np.random.randint(0,12)])
                                         k-=1
                                 else:
                                         a+=1
@@ -84,7 +84,8 @@ if st.button('予想'):
                                 k-=1
                 if k==1:
                         main(1)
-                        st.write("S"+one[int(te)])
+                        st.write("S "+one[int(te)])
+        main(1)
     
         if simulation=="累計報酬をシミュレーション":
                 st.write(one[np.random.randint(0,12)])
