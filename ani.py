@@ -79,7 +79,6 @@ if st.button('予想'):
                                         st.write("S "+one[np.random.randint(0,12)]+" アニバ")
                                         k-=1
                                 else:
-                                    if se<=21:
                                         s+=1
                                         st.write("S "+series+" "+se+"番目に登場した選手")
                                         k-=1
