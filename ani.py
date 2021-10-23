@@ -83,6 +83,7 @@ if st.button('予想'):
                                 st.write("B")
                                 k-=1
                 if k==1:
+                        main(1)
                         st.write("S"+one[int(te)])
     
         if simulation=="累計報酬をシミュレーション":
