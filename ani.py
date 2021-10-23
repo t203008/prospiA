@@ -78,9 +78,11 @@ if st.button('予想'):
                         se=np.random.randint(1,31)
                         bse=np.random.randint(1,33)
                         if se<=21:
+                            play=0
                             series="Series1"
                             se=str(se)
                         elif 21<se:
+                            play=1
                             series="Series2"
                             se=str(se-21)
                         if bse<=23:
@@ -97,7 +99,8 @@ if st.button('予想'):
                                         k-=1
                                 else:
                                         s+=1
-                                        st.write("S "+series+" "+se+"番目に登場した選手")
+                                        if play==o:
+                                            st.write("S "+series+" "+s1_players[np.random.randint(0,252)])
                                         k-=1
                         elif 25<y<=110:
                                 z=np.random.randint(1,11)
