@@ -61,11 +61,9 @@ if st.button('予想'):
                         se=np.random.randint(1,31)
                         if se<=21:
                             series="Series1"
-                            select=se+"番目に登場した選手"
                         elif 21<=se:
                             series="Series2"
-                            ser=se-21
-                            select=ser+"番目に登場した選手"
+                            se=se-21
                         if y<=25:
                                 z=np.random.randint(1,11)
                                 if z<=5:
@@ -75,7 +73,7 @@ if st.button('予想'):
                                 else:
                                     if se<=21:
                                         s+=1
-                                        st.write("S "+series+" "+select)
+                                        st.write("S "+series+" "+se+"番目に登場した選手")
                                         k-=1
                         elif 25<y<=110:
                                 z=np.random.randint(1,11)
@@ -85,7 +83,7 @@ if st.button('予想'):
                                         k-=1
                                 else:
                                         a+=1
-                                        st.write("A "+series+" "+select)
+                                        st.write("A "+series+" "+se+"番目に登場した選手")
                                         k-=1
                         else:
                                 b+=1
