@@ -4,7 +4,7 @@ def main(i):
     status_area = st.empty()
     count_down_sec = i
     for i in range(count_down_sec):
-        time.sleep(1)
+        time.sleep(0.5)
 st.title("アニバーサリー総選挙2021 予想")
 toba=st.sidebar.text_input('', 'アニバーサリー総選挙2021')
 simulation=st.sidebar.radio("何をシミュレーションしますか？",("60連目をシミュレーション","累計報酬をシミュレーション"))
@@ -150,9 +150,9 @@ if st.button('予想'):
                                 st.write("B")
                                 k-=1
                 if k==1:
-                        main(1)
+                        main(0.5)
                         st.write("S　アニバ　"+one[int(te)])
-        main(1)
+        main(0.5)
     
         if simulation=="累計報酬をシミュレーション":
                 st.write(one[np.random.randint(0,12)])
