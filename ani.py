@@ -101,7 +101,7 @@ if st.button('予想'):
                 b=0
                 k=10
                 while k>1:
-                        main(1)
+                        main(0.5)
                         y=np.random.randint(1,1001)
                         se=np.random.randint(1,31)
                         bse=np.random.randint(1,33)
