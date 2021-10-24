@@ -2,7 +2,7 @@ import time
 import streamlit as st
 st.title("アニバーサリー総選挙2021 予想")
 toba=st.sidebar.text_input('', 'アニバーサリー総選挙2021')
-#k=st.sidebar.number_input("表示間隔",value=0.5)
+k=st.sidebar.number_input("表示間隔",value=0.5)
 def main(i):
     status_area = st.empty()
     count_down_sec = i
