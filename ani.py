@@ -2,12 +2,11 @@ import time
 import streamlit as st
 st.title("アニバーサリー総選挙2021 予想")
 toba=st.sidebar.text_input('', 'アニバーサリー総選挙2021')
-k=int(st.sidebar.number_input("表示間隔",value=0.5))
 def main(i):
     status_area = st.empty()
     count_down_sec = i
     for i in range(count_down_sec):
-        time.sleep(k)
+        time.sleep(0.5)
 simulation=st.sidebar.radio("何をシミュレーションしますか？",("60連目をシミュレーション","累計報酬をシミュレーション"))
 team=st.sidebar.radio("自チーム",("福岡ソフトバンクホークス","千葉ロッテマリーンズ","埼玉西武ライオンズ","東北楽天ゴールデンイーグルス","北海道日本ハムファイターズ","オリックス・バファローズ","読売ジャイアンツ","阪神タイガース","中日ドラゴンズ","横浜DeNAベイスターズ","広島東洋カープ","東京ヤクルトスワローズ"))
 if team=="福岡ソフトバンクホークス":
