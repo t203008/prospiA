@@ -101,7 +101,7 @@ if st.button('予想'):
                 b=0
                 k=10
                 while k>1:
-                        main(0.5)
+                        main(1)
                         y=np.random.randint(1,1001)
                         se=np.random.randint(1,31)
                         bse=np.random.randint(1,33)
@@ -150,9 +150,9 @@ if st.button('予想'):
                                 st.write("B")
                                 k-=1
                 if k==1:
-                        main(0.5)
+                        main(1)
                         st.write("S　アニバ　"+one[int(te)])
-        main(0.5)
+        main(1)
     
         if simulation=="累計報酬をシミュレーション":
                 st.write(one[np.random.randint(0,12)])
