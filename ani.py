@@ -1,6 +1,6 @@
 import time
 import streamlit as st
-st.title("アニバーサリー総選挙2021 予想")
+st.title("称号チャレンジ")
 toba=st.sidebar.text_input('', 'アニバーサリー総選挙2021')
 def main(i):
     status_area = st.empty()
